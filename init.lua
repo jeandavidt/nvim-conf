@@ -789,7 +789,7 @@ require('lazy').setup({
       }
     end,
   },
-
+  --[[
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is
@@ -803,11 +803,11 @@ require('lazy').setup({
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'tokyonight-night'
 
-  -- You can configure highlights by doing something like
-  --  vim.cmd.hi 'Comment gui=none'
-  --end,
-  --},
-
+    -- You can configure highlights by doing something like
+    vim.cmd.hi 'Comment gui=none'
+    end,
+  },
+  --]]
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
